@@ -1,0 +1,256 @@
+/*
+Theme Name: Social Brothers
+Theme URI: https://socialbrothers.nl/
+Author: Wesley de Kraker
+Author URI: http://wesleydekraker.nl/
+Description: Custom Theme Social Brothers
+Version: 1.0
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    width: 95%;
+    max-width: 1300px;
+    min-height: 100%;
+    margin: 0 auto;
+    color: #333;
+}
+
+h1 {
+    font-size: 1.7em;
+    margin: .5em 0 .2em 0;
+    padding: 0 0 .5em;
+    color: #000;
+    border-bottom: 1px solid #f26539;
+}
+
+h1 span.orange {
+    color: #f26539;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: .5em 0;
+}
+
+p {
+    margin: .5em 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:focus,
+a:hover {
+    text-decoration: underline;
+}
+
+.read-more {
+    text-decoration: underline;
+}
+
+.pagination {
+    float: left;
+    width: 100%;
+    margin: .5em 0 1em 0;
+}
+
+.pagination .page-numbers {
+    float: left;
+    margin: 0;
+    margin: 0 .5em 0 0;
+    padding: .5em 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pagination .page-numbers:hover,
+.pagination .page-numbers:active {
+    text-decoration: none;
+    background-color: #ddd;
+}
+
+.pagination .current,
+.pagination .current:hover,
+.pagination .current:active {
+    color: #fff;
+    background-color: #f26539;
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+}
+
+.flex-container.horizontal {
+    flex-direction: column;
+    height: auto;
+}
+
+.flex-item.grow {
+    flex-grow: 1;
+}
+
+.flex-item.one-half {
+    width: 50%;
+    padding: 2em 3.9em .5em;
+}
+
+.flex-item.align-end {
+    align-self: flex-end;
+}
+
+.main-header {
+    text-align: center;
+}
+
+.main-header .logo {
+    height: 4.7em;
+    margin: 1.9em 4.3em 1.9em 0;
+}
+
+.content {
+    float: left;
+}
+
+.content .contact-form {
+    width: 50%;
+    min-width: 14em;
+    max-width: 18em;
+    align-self: flex-end;
+}
+
+.content .contact-form .field {
+    float: left;
+    width: 100%;
+    margin: 0 0 .7em 0;
+    padding: .5em;
+    border: 1px solid #f26539;
+    border-radius: .5em;
+}
+
+.content .contact-form .button {
+    float: right;
+    width: 50%;
+    margin: 0;
+    padding: .5em;
+    color: #fff;
+    border: none;
+    border-radius: .5em;
+    background-color: #f26539;
+}
+
+.content .action .box {
+    line-height: 12em;
+    display: block;
+    width: 12em;
+    height: 12em;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+    background-color: #000;
+}
+
+.backstretch {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #c2c2c2;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        width: 100%;
+    }
+
+    .flex-item.one-half {
+        padding: 2em 2em .5em;
+    }
+}
+
+@media screen and (max-width: 550px)
+{
+    .flex-container {
+        display: inline;
+    }
+
+    .flex-item.one-half {
+        float: left;
+        width: 100%;
+        padding: 2em 1.5em .5em;
+    }
+
+    .flex-item.one-half.sidebar-1 {
+        padding-top: 0;
+    }
+
+    .main-header {
+        position: absolute;
+        top: 7.6em;
+        width: 100%;
+    }
+
+    .main-header .logo {
+        height: 4em;
+        margin: 0;
+    }
+
+    .main-content {
+        margin-top: 10.5em;
+    }
+
+    .content .contact-form {
+        width: 100%;
+    }
+
+    .content .action {
+        position: absolute;
+        top: .5em;
+        left: 0;
+        width: 100%;
+    }
+
+    .content .action .box {
+        line-height: 5.5em;
+        width: 17em;
+        height: 5.5em;
+        margin: 0 auto;
+    }
+
+    .backstretch {
+        position: absolute;
+        width: 100%;
+        height: 10.5em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main-header .logo {
+        height: 3em;
+    }
+
+    .content .action .box {
+        line-height: 4.5em;
+        width: 14em;
+        height: 4.5em;
+    }
+
+    .backstretch {
+        height: 9.8em;
+    }
+}
